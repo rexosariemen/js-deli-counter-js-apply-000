@@ -1,10 +1,10 @@
-function takeANumber(currentLine, newCustomer) {
-  var str = '';
-  currentLine.push(newCustomer);
-  str += "Welcome, " + newCustomer + ". You are number " + currentLine.length + " in line.";
+// function takeANumber(currentLine, newCustomer) {
+//   var str = '';
+//   currentLine.push(newCustomer);
+//   str += "Welcome, " + newCustomer + ". You are number " + currentLine.length + " in line.";
   
-  return str;
-}
+//   return str;
+// }
 
 function nowServing(katzDeliLine) {
   if (katzDeliLine.length < 1) {
@@ -23,6 +23,7 @@ function currentLine(currentQueue) {
   
   for (var i = 0; i < currentQueue.length; i++) {
     var customer = currentQueue[i];
+    
     if (i === currentQueue.length - 1) {
       message += (i + 1) + ". " + customer;
     } else {
