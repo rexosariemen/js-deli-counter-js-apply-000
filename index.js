@@ -16,6 +16,7 @@ function nowServing(katzDeliLine) {
 
 function currentLine(currentQueue) {
   var message = "The line is currently: "
+  
   if (currentQueue.length < 1) {
     return "The line is currently empty."
   }
