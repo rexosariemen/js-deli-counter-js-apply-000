@@ -33,3 +33,10 @@ function currentLine(currentQueue) {
   
   return message;
 }
+
+var counter = 0;
+function takeANumber(catzDeliLine) {
+  counter++
+  catzDeliLine.push(counter);
+  return `${counter}`;
+}
